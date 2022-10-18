@@ -11,6 +11,7 @@ body {
     overflow-x: hidden;
 }
 
+
 .oauth-layout{
     min-height: 100vh;
     width: 100%;
@@ -29,6 +30,17 @@ p {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+}
+.form-label.is-required:after {
+    content: "*";
+    color: #188e8e;
+}
+.text-left {
+    text-align: left;
+}
+.base-checkbox__label {
+    margin-left: 0.55em;
+    display: inline-block;
 }
 
 ::selection {
@@ -209,6 +221,30 @@ p {
     font-size: 13px;
     line-height: 1.53846154;
     color: #2c2c2c;
+}
+.base-checkbox.with-label {
+    
+    display: inline-flex;
+    
+    flex-wrap: nowrap;
+    
+    align-items: center;
+}
+.optional-middle-name {
+    margin-bottom: 10px;
+}
+
+.base-checkbox {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
 }
 .base-input{width:100%;}
 .base-input-wrapper {position:relative;}
