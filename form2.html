@@ -13,12 +13,13 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link href="normalize.css" rel="stylesheet">
   </head>
   <body>
     <div class="oauth-layout oauth-layout--theme-onti">
-      <!---->
       <div class="oauth-wrapper">
         <div class="oauth-panel">
           <div class="oauth-panel__head">
@@ -31,18 +32,10 @@
                 type="button"
                 title="Что такое Talent ID?"
                 class="talent-info-btn"
-                data-cy="talent-id-show"
-              >
+                data-cy="talent-id-show" class="talent-info-btn">
                 <span>Talent ID</span>
-                <span
-                  role="img"
-                  class="base-icon base-icon--question-circle"
-                  style="width: 1.2em; height: 1.2em; vertical-align: middle"
-                >
-                  <svg>
-                    <use
-                      xlink:href="/_nuxt/img/symbol-defs.5ee987a.svg#icon-question-circle"
-                    ></use></svg></span>
+                                <!--<i class="fa-regular fa-question"></i>-->  
+<img width="17%" height="17%" src="/questioncircle_a.svg" /></span>
               </button>
             </div>
           </div>
@@ -71,71 +64,39 @@
                             class="base-loading-box"
                             data-cy="oauth-reg-form"
                           >
-                            <!---->
                             <div class="base-loading-box__data">
-                              <span data-v-cfd1ebd4=""
-                                ><div
-                                  data-v-cfd1ebd4=""
-                                  data-cy="reg-step-1"
-                                  class="text-left"
-                                >
-                                  <div data-v-cfd1ebd4="" class="row">
-                                    <div
-                                      data-v-cfd1ebd4=""
-                                      class="col-md-6 col-sm-6 col-xs-12"
-                                    >
-                                      <div data-v-cfd1ebd4="" class="form-row">
-                                        <label
-                                          data-v-cfd1ebd4=""
-                                          for="reg_last_name"
-                                          class="form-label is-required"
-                                        >
+                              <span><div data-cy="reg-step-1" class="text-left">
+                                  <div  class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <div class="form-row">
+                                        <label for="reg_last_name"
+                                          class="form-label is-required">
                                           Фамилия
                                         </label>
                                         <div class="base-input-root">
                                           <div class="base-input-wrapper">
-                                            <div
-                                              class="base-input base-input--type-text"
-                                            >
-                                              <!---->
+                                            <div class="base-input base-input--type-text">
                                               <input
                                                 id="reg_last_name"
                                                 type="text"
                                                 name="last_name"
                                                 autocomplete="family-name"
                                                 data-cy="reg-form-last_name"
-                                                class="base-input__control base-input__control--type-text base-input__control--size-md base-input__control--theme-default"
-                                              />
-                                              <!---->
-                                              <!---->
-                                              <div
-                                                data-v-e35f9454=""
-                                                class="base-input__after"
-                                              ></div>
+                                                class="base-input__control base-input__control--type-text base-input__control--size-md base-input__control--theme-default"/>
+                                              <div class="base-input__after"></div>
                                             </div>
                                           </div>
-                                          <!---->
                                         </div>
                                       </div>
                                     </div>
-                                    <div
-                                      data-v-cfd1ebd4=""
-                                      class="col-md-6 col-sm-6 col-xs-12"
-                                    >
-                                      <div data-v-cfd1ebd4="" class="form-row">
-                                        <label
-                                          data-v-cfd1ebd4=""
-                                          for="reg_first_name"
-                                          class="form-label is-required"
-                                        >
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <div class="form-row">
+                                        <label for="reg_first_name" class="form-label is-required">
                                           Имя
                                         </label>
                                         <div class="base-input-root">
                                           <div class="base-input-wrapper">
-                                            <div
-                                              class="base-input base-input--type-text"
-                                            >
-                                              <!---->
+                                        <div class="base-input base-input--type-text">
                                               <input
                                                 id="reg_first_name"
                                                 type="text"
@@ -144,38 +105,22 @@
                                                 data-cy="reg-form-first_name"
                                                 class="base-input__control base-input__control--type-text base-input__control--size-md base-input__control--theme-default"
                                               />
-                                              <!---->
-                                              <!---->
-                                              <div
-                                                data-v-e35f9454=""
-                                                class="base-input__after"
-                                              ></div>
+                                              <div class="base-input__after"></div>
                                             </div>
                                           </div>
-                                          <!---->
                                         </div>
                                       </div>
                                     </div>
                                   </div>
                                   <div class="row">
-                                    <div
-                                      data-v-cfd1ebd4=""
-                                      class="col-md-6 col-sm-6 col-xs-12"
-                                    >
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
                                       <div class="form-row">
-                                        <label
-                                          data-v-cfd1ebd4=""
-                                          for="reg_middle_name"
-                                          class="form-label is-required"
-                                        >
+                                        <label for="reg_middle_name" class="form-label is-required">
                                           Отчество
                                         </label>
                                         <div class="base-input-root">
                                           <div class="base-input-wrapper">
-                                            <div
-                                              class="base-input base-input--type-text"
-                                            >
-                                              <!---->
+                                            <div class="base-input base-input--type-text">
                                               <input
                                                 id="reg_middle_name"
                                                 type="text"
@@ -184,63 +129,35 @@
                                                 data-cy="reg-form-middle_name"
                                                 class="base-input__control base-input__control--type-text base-input__control--size-md base-input__control--theme-default"
                                               />
-                                              <!---->
-                                              <!---->
-                                              <div
-                                                data-v-e35f9454=""
-                                                class="base-input__after"
-                                              ></div>
+                                              <div class="base-input__after"></div>
                                             </div>
                                           </div>
-                                          <!---->
                                         </div>
                                       </div>
                                     </div>
-                                    <div
-                                      data-v-cfd1ebd4=""
-                                      class="col-md-6 col-sm-6 col-xs-12"
-                                    >
-                                      <label
-                                        data-v-cfd1ebd4=""
-                                        class="form-label optional-middle-name"
-                                        >&nbsp;</label
-                                      >
-                                      <div data-v-cfd1ebd4="" class="form-row">
-                                        <label
-                                          data-v-8afa374c=""
-                                          data-v-cfd1ebd4=""
-                                          class="base-checkbox with-label theme-default"
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <label class="form-label optional-middle-name"
+                                        >&nbsp;</label>
+                                      <div class="form-row">
+                            <label class="base-checkbox with-label theme-default"
                                         >
                                           <input
-                                            data-v-8afa374c=""
                                             type="checkbox"
-                                            value=""
-                                          />
-                                          <div
-                                            
-                                            class="base-checkbox__box"
-                                          >
-                                            <svg
-                                              
-                                              viewBox="0 0 15 11"
+                                            value=""/>
+                                          <div class="base-checkbox__box">
+                                            <svg viewBox="0 0 15 11"
                                               fill="none"
                                               xmlns="http://www.w3.org/2000/svg"
-                                              class="base-checkbox__icon"
-                                            >
+                                              class="base-checkbox__icon">
                                               <path
-                                                
                                                 fill-rule="evenodd"
                                                 clip-rule="evenodd"
                                                 d="M14.7062 0.291957C15.0972 0.681964 15.0981 1.31513 14.708 1.70617L5.73185 10.7062C5.54424 10.8943 5.28948 11 5.02381 11C4.75813 11 4.50338 10.8943 4.31577 10.7062L0.291957 6.67169C-0.0980494 6.28065 -0.0972108 5.64748 0.29383 5.25747C0.684872 4.86747 1.31804 4.86831 1.70804 5.25935L5.02381 8.58391L13.292 0.29383C13.682 -0.0972108 14.3151 -0.0980494 14.7062 0.291957Z"
                                               ></path>
                                             </svg>
                                           </div>
-                                          <span
-                                            
-                                            class="base-checkbox__label"
-                                            >Нет отчества</span
-                                          ></label
-                                        >
+                                          <span class="base-checkbox__label"
+                                            >Нет отчества</span></label>
                                       </div>
                                     </div>
                                   </div>
@@ -262,7 +179,6 @@
                                             <div
                                               class="base-input base-input--type-email"
                                             >
-                                              <!---->
                                               <input
                                                 id="reg_email"
                                                 type="email"
@@ -271,21 +187,19 @@
                                                 autocomplete="username"
                                                 class="base-input__control base-input__control--type-email base-input__control--size-md base-input__control--theme-default"
                                               />
-                                              <!---->
-                                              <!---->
+
+
                                               <div
                                                 
                                                 class="base-input__after"
                                               ></div>
                                             </div>
                                           </div>
-                                          <!---->
+
                                         </div>
                                       </div>
                                     </div>
-                                    <div
-                                      
-                                      class="col-md-6 col-sm-6 col-xs-12"
+                                    <div class="col-md-6 col-sm-6 col-xs-12"
                                     >
                                       <div  class="form-row">
                                         <label
