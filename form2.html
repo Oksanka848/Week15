@@ -10,8 +10,6 @@
           rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"/>
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link href="normalize.css" rel="stylesheet">
   </head>
@@ -31,7 +29,8 @@
                 class="talent-info-btn"
                 data-cy="talent-id-show" class="talent-info-btn">
                 <span>Talent ID</span>
-<img width="17%" height="17%" src="/questioncircle_a.svg" /></span>
+                <span role="img" class="base-icon base-icon--question-circle" style="width:1.2em;height:1.2em;vertical-align:middle;">
+                <img width="100%" height="100%" src="/questioncircle_a.svg" /></span>
               </button>
             </div>
           </div>
@@ -63,6 +62,7 @@
                                           class="form-label is-required">
                                           Фамилия
                                         </label>
+                                        
                                         <div class="base-input-root">
                                           <div class="base-input-wrapper">
                                             <div class="base-input base-input--type-text">
@@ -76,15 +76,16 @@
                                               <div class="base-input__after"></div>
                                             </div>
                                           </div>
+                                          <span class="form-error" id="error"></span>
                                         </div>
                                       </div>
                                     </div>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                      <div class="form-row">
+                                      <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <div class="form-row">
                                         <label for="reg_first_name" class="form-label is-required">
-                                          Имя
+                                          Имя 
                                         </label>
-                                        <div class="base-input-root">
+                                            <div class="base-input-root">
                                           <div class="base-input-wrapper">
                                         <div class="base-input base-input--type-text">
                                               <input
@@ -94,10 +95,12 @@
                                                 autocomplete="given-name"
                                                 data-cy="reg-form-first_name"
                                                 class="base-input__control base-input__control--type-text base-input__control--size-md base-input__control--theme-default"
-                                              />
+                                              placeholder=""
+                                                />
                                               <div class="base-input__after"></div>
                                             </div>
                                           </div>
+                                          <span class="form-error" id="error"></span>
                                         </div>
                                       </div>
                                     </div>
@@ -194,7 +197,7 @@
                                             <div
                                               class="base-input base-input--type-text"
                                             >
-                                              <!---->
+                                            
                                               <input
                                                 id="birthday"
                                                 type="text"
@@ -204,48 +207,37 @@
                                                 placeholder="дд.мм.гггг"
                                                 class="base-input__control base-input__control--type-text base-input__control--size-md base-input__control--theme-default"
                                               />
-                                              <!---->
-                                              <!---->
-                                              <div
-                                                
-                                                class="base-input__after"
-                                              ></div>
+                                              <div class="base-input__after"></div>
                                             </div>
                                           </div>
-                                          <!---->
                                         </div>
                                       </div>
                                     </div>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                       <div  class="form-row">
                                         <label class="form-label">Пол</label>
-                                        <div
-                            class="switcher" data-cy="reg-form-sex">
+                                        <div class="switcher" data-cy="reg-form-sex">
                                           <button type="button"
                                             class="switcher__control">
                                             <span >Мужской</span></button>
                                             <button type="button" class="switcher__control ">
                                             <span >Женский</span>
                                           </button>
+                                          
                                         </div>
                                       </div>
                                     </div>
                                   </div>
-                                  <!---->
+                                  
                                   <div class="oauth-btns-group">
                                     <button
-                                      
                                       type="button"
-                                      class="base-btn base-btn--theme-secondary base-btn--size-md base-btn--xspace-lg"
-                                    >
-                                      <span class="base-btn__inner"
-                                        >Отмена</span
-                                      >
+                                      class="base-btn base-btn--theme-secondary base-btn--size-md base-btn--xspace-lg">
+                                      <span class="base-btn__inner">Отмена</span>
                                     </button>
                                     <button type="button"
                                       class="base-btn base-btn--theme-primary base-btn--size-md base-btn--xspace-lg"
-                                     id="click" onclick="check()";>
-
+                                     id="click" onclick="check();">
                                       <span class="base-btn__inner"
                                         >Далее</span
                                       >
@@ -256,7 +248,7 @@
                                   Уже есть учетная запись?
                                   <a class="link link--pseudo">Перейти ко входу</a>.
                                 </p>
-                                <!----></span>
+                                </span>
                             </div>
                           </div>
                         </div>
@@ -270,10 +262,9 @@
         </div>
       </div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
+<script src="form.js"></script>
   </body>
 </html>

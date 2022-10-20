@@ -10,8 +10,29 @@ body {
   background: #f1f4f5;
   overflow-x: hidden;
 }
+#error {
+  color: #da383f;
+}
+.form-error,
+.form-success {
+  font-size: 13px;
+  line-height: 1.53846154;
+  margin-top: 5px;
+  display: block;
+}
+
 .mb20 {
   margin-bottom: 20px !important;
+}
+.link:hover {
+  color: #888;
+}
+.link--pseudo {
+  border-bottom: 1px dashed;
+}
+.link {
+  text-decoration: none;
+  cursor: pointer;
 }
 .text-size-h3 {
   font-size: 1.5rem;
@@ -45,6 +66,16 @@ p {
 .text-left {
   text-align: left;
 }
+
+.base-icon {
+  fill: currentColor;
+  display: inline-block;
+}
+.talent-info-btn:focus,
+.talent-info-btn:hover {
+  color: #188e8e;
+}
+
 .base-checkbox__label {
   margin-left: 0.55em;
   display: inline-block;
@@ -127,12 +158,12 @@ p {
   border: 0;
   font-family: inherit;
   outline: none;
-  font-size: 16px;
+  font-size: 17px;
   padding: 0;
   cursor: pointer;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
-  font-weight: 500;
+  font-weight: 700;
   color: #888;
 }
 .switcher__control.selected {
@@ -146,7 +177,7 @@ p {
 .oauth-panel__talentid {
   width: 100px;
   text-align: right;
-  }
+}
 .oauth-panel__brand img {
   max-width: 100%;
   max-height: 100%;
@@ -158,8 +189,6 @@ img {
 .talent-info-btn span {
   vertical-align: middle;
 }
-
-
 
 ::selection {
   background: #188e8e;
@@ -375,6 +404,11 @@ img {
   transform: translateZ(0);
   user-select: none;
   cursor: pointer;
+}
+.base-checkbox:hover .base-checkbox__box,
+.base-checkbox__box:active,
+.base-checkbox__box:hover {
+  border-color: #6e6e6e;
 }
 
 .base-input {
