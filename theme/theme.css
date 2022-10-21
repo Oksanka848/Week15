@@ -1,0 +1,21 @@
+*{
+display: block;
+}
+
+.textcols {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.textcols-item {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+	height: 30%;
+	background: #fff2e1;
+}
+.textcols-item + .textcols-item {
+	margin-left: 5%;
+}
