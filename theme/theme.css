@@ -1,6 +1,6 @@
 *{
 display: block;
-background: #fdf7ee;
+
 }
 button {
     display: block;
@@ -26,11 +26,13 @@ button {
 	margin-left: 5%;
 }
 
-.item__theme-day {
+.myClass {
 	display: flex;
 	flex-direction: column;
 	flex-basis: 100%;
 	flex: 1;
 	height: 30%;
-	background: #FAEBD7;
+	background: #31302f;
+    text-decoration: aliceblue;
 }
+

@@ -8,32 +8,33 @@
     <link rel="stylesheet" type="text/css" href="theme.css" />
 </head>
 <body>
+   
     <div class="select">
-    <select id="selecttheme" onclick="selecttheme()">
+    <select id="selecttheme" onchange="selecttheme()">
     <option value="none" id="none"></option>
-    <option value="day" id="day">day</option>
+    <option value="day" id="day" onchange="selecttheme()">day</option>
     <option value="nit" id="nit">night</option>
     <option value="mon" id="mon">moning</option>
     <option value="even" id="even">evening</option>
     </select>
     
 </div>
-<div class="textcols">
-        <div class="textcols-item item__theme-day">
+<div class="textcols" id="foo">
+        <div class="textcols-item">
             <b>Lorem ipsum dolor sit amet</b>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Proin blandit magna eu tempus ullamcorper. 
             Sed porta justo sed nibh elementum condimentum.
             Quisque non eros sit amet elit commodo maximus eget a eros.
         </div>
-        <div class="textcols-item item__theme-day">
+        <div class="textcols-item">
             <b>Lorem ipsum dolor sit amet</b>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Proin blandit magna eu tempus ullamcorper. 
             Sed porta justo sed nibh elementum condimentum.
             Quisque non eros sit amet elit commodo maximus eget a eros.
         </div>
-        <div class="textcols-item item__theme-day">
+        <div class="textcols-item">
             <b>Lorem ipsum dolor sit amet</b>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Proin blandit magna eu tempus ullamcorper. 
