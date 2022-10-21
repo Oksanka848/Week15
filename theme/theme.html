@@ -9,18 +9,18 @@
 </head>
 <body>
    
-    <div class="select">
-    <select id="selecttheme" onchange="selecttheme()">
-    <option value="none" id="none"></option>
-    <option value="day" id="day" onchange="selecttheme()">day</option>
-    <option value="nit" id="nit">night</option>
+    <div class="wrap" id="wrap">
+    <select name="theme" onchange="selecttheme()">
+    <option disabled selected="none">Выберите тему</option>
+    <option value="day" id="day" >day</option>
+    <option value="night" id="night">night</option>
     <option value="mon" id="mon">moning</option>
     <option value="even" id="even">evening</option>
     </select>
     
-</div>
-<div class="textcols" id="foo">
-        <div class="textcols-item">
+
+<div class="textcols">
+        <div class="textcols-item" >
             <b>Lorem ipsum dolor sit amet</b>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Proin blandit magna eu tempus ullamcorper. 
@@ -42,6 +42,7 @@
             Quisque non eros sit amet elit commodo maximus eget a eros.
         </div>
     </div>
+</div>
     <script src="theme.js"></script>
 </body>
 </html>

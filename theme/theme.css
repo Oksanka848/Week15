@@ -1,38 +1,30 @@
-*{
-display: block;
-
+* {
+  display: block;
 }
 button {
-    display: block;
-    border: 102px solid gray;
+  display: block;
+  border: 102px solid gray;
 }
 
 .textcols {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: 100%;
-
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 .textcols-item {
-	display: flex;
-	flex-direction: column;
-	flex-basis: 100%;
-	flex: 1;
-	height: 30%;
-	background: #fff2e1;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  height: 30%;
+  background: #fff2e1;
+  text-decoration: #31302f;
 }
 .textcols-item {
-	margin-left: 5%;
+  margin-left: 5%;
 }
 
-.myClass {
-	display: flex;
-	flex-direction: column;
-	flex-basis: 100%;
-	flex: 1;
-	height: 30%;
-	background: #31302f;
-    text-decoration: aliceblue;
+.wrap {
+  background: none;
 }
-

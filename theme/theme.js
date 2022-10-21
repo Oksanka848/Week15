@@ -1,14 +1,18 @@
 /*Сделайте страничку с возможность выбора темы из выпадающего списка 
 (например, темная, белая, синяя). 
 После выбора темы меняйте фон документа согласно выбранному цвету.*/
-/*function selecttheme() {
-    document.getElementById ('day')
-    .style.backgroundColor = '#fdf7ee';
-    document.getElementById ('day')('#foo').classList.add('myClass');
-}*/
+
 function selecttheme() {
-document.getElementById ('day').addEventListener('onchange'
-, () => {
-  document.getElementById ('day')('foo').classList.add('myClass');
-});
-}
+  if (document.getElementById ('day').value)
+  
+
+document.getElementById("wrap").style.background = "aliceblue"; 
+
+
+  
+
+  if (document.getElementById ('night').value)
+  
+
+document.getElementById("wrap").style.background = "gray"; 
+  }
