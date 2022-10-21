@@ -1,5 +1,10 @@
 *{
 display: block;
+background: #fdf7ee;
+}
+button {
+    display: block;
+    border: 102px solid gray;
 }
 
 .textcols {
@@ -7,6 +12,7 @@ display: block;
 	flex-direction: row;
 	flex-wrap: wrap;
 	width: 100%;
+
 }
 .textcols-item {
 	display: flex;
@@ -16,6 +22,15 @@ display: block;
 	height: 30%;
 	background: #fff2e1;
 }
-.textcols-item + .textcols-item {
+.textcols-item {
 	margin-left: 5%;
+}
+
+.item__theme-day {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+	height: 30%;
+	background: #FAEBD7;
 }
