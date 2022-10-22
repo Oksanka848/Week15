@@ -1,42 +1,11 @@
-/*let button = document.getElementById ('check');
-let input = getElementsByTagName ('input').value;
-let name = document.getElementById ('first_name');
-button.onclick = check;
+/*Сделайте красивую форму регистрации из любого используемого вами сервиса
+ (минимум 5 полей ввода), например, регистрация в Яндексе,
+  Гугле или на любом другом сайте. 
+  Если какое-то из полей не заполнено или заполнено неверно,
+   выводите сообщение об ошибке. 
+   Условия проверки для каждого поля придумайте самостоятельно. 
+Если все заполнено верно, то выведите "Добро пожаловать, имя пользователя!".*/
 
-function check () {
-    if (getElementsByTagName ('input').value == '') 
-    {alert ("Это обязательное поле"); }
-    else {
-        
-        alert ('Добро пожаловать, ${name}');
-    }
-}
-$(document).ready(function() {
-    $('#submit').click(function() {
-        var value = document.getElementById('name').value;
-        if (value === '') {
-            alert('Enter your name');
-        }
-    })
-});*/
-/*let name = document.getElementById ('first_name')[0];
-/*let button = document.getElementById ('check');
-
-button.onclick = check;
-
-function check () {
-        let value = document.getElementsByTagName ('input').value;
-        if (value === '') {
-            alert('Это обязательное поле');
-        }
-        else {
-            document.getElementsByTagName ('input').style.border = '4em solid black';
-            alert ('Добро пожаловать, ${name}');
-        }
-    }
-    /*)
-
-});*/
 function check () {
 let reg_last_name = document.getElementById ('reg_last_name');
 let reg_first_name = document.getElementById ('reg_first_name');
