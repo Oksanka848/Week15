@@ -5,23 +5,32 @@
    выводите сообщение об ошибке. 
    Условия проверки для каждого поля придумайте самостоятельно. 
 Если все заполнено верно, то выведите "Добро пожаловать, имя пользователя!".*/
-
-function check () {
 let reg_last_name = document.getElementById ('reg_last_name');
 let reg_first_name = document.getElementById ('reg_first_name');
+let reg_middle_name = document.getElementById ('reg_middle_name');
+let reg_email = document.getElementById ('reg_email');
+let birthday = document.getElementById ('birthday');
 
-
-document.getElementById ('error')
-.innerHTML=" ";
-
+function check () {
+document.getElementById ('error').innerHTML=" ";
 if (reg_last_name.value == '') {
 document.getElementById ('error')
-.innerHTML+= "Это обязательное поле<br>";
+.innerHTML+= "Фамилия ?<br>";
 }
 if (reg_first_name.value == '') {
-    document.getElementById ('error')
-    .innerHTML+= "Это обязательное поле<br>";
-    reg_first_name.value.placeholder = error;
-    }
-
+document.getElementById ('error').innerHTML+= "Имя?<br>";
 }
+if (reg_middle_name.value == '') {
+document.getElementById ('error').innerHTML+= "Отчество?<br>";
+}  
+if (reg_email.value == '') {
+    document.getElementById ('error').innerHTML+= "Ваша почта?<br>";
+}        
+if (birthday.value == '') {
+document.getElementById ('error').innerHTML+= "Ваша дата рождения?<br>";
+} 
+else {
+alert(`Добро пожаловать, ${reg_first_name.value} !`)};
+}
+
+
